@@ -1,0 +1,28 @@
+{
+  "name": "ts-safe-errors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camfletch/ts-safe-errors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camfletch/ts-safe-errors/issues"
+  },
+  "homepage": "https://github.com/camfletch/ts-safe-errors#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
