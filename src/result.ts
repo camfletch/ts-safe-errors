@@ -43,16 +43,3 @@ export function wrapErrorResult<TError, TInnerError>(
     innerErrorResult,
   };
 }
-
-const someFunc = (): Result<number, Error> => {
-  return Math.random() > 0.5 ? error(new Error("oi")) : ok(5);
-};
-
-const myConsumer = (): Result<number, string> => {
-  const result = someFunc();
-  if (result.isError) {
-    return wrapErrorResult(result, "something inside me blew up");
-  }
-
-  return ok(result.value);
-};
