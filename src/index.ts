@@ -1,4 +1,3 @@
-import { add } from "./add";
-import { subtract } from "./subtract";
+import { ok, error, Result } from "./result";
 
-export { add, subtract };
+export { ok, error, Result };
